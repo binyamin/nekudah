@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-import lib from './frodo/index.js';
+import lib from '..index.js';
 
 const cmd = process.argv.slice(2)[0];
 
