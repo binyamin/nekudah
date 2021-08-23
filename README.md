@@ -1,10 +1,10 @@
 # Nekuda
-> A set of tools for creating your own static-site workflow.
+> A set of varied tools for creating your own static-site workflow.
 
 ## About
 
 ### The name
-In Hebrew, the word _nekuda_ (נקודה) can be translated as "a point". This project is like the _dot_ in the letter "i", or the _period_ at the end of a sentence. It's just a puzzle piece.
+In Hebrew, the word _nekuda_ (נקודה) can be translated as "a point". This project is like the _dot_ in the letter "i", or the _period_ at the end of a sentence. It's just a bag of puzzle pieces.
 
 
 ## 💬 Open for comments
