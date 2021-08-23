@@ -7,6 +7,8 @@ import Engine from "./lib/Engine.js";
 import Server from "./lib/Server.js";
 import { copyDir, walk, copyFile, readJSON } from "./lib/common/fs.js";
 
+
+/** @todo configured, not hard-coded */
 const dirs = {
     html: resolve("src"),
     assets: resolve("static"),
@@ -21,6 +23,11 @@ async function build() {
         return relative(dirs.html, f);
     })
     .filter(f => {
+        /**
+         * @todo Use underscore convention...
+         * - If file starts with underscore, ignore file
+         * - If folder starts with underscore, ignore children recursively
+         */
         return !f.startsWith("_partials") && f !== "macros.html";
     })
 
@@ -33,6 +40,7 @@ async function build() {
     log.success("Build complete")
 }
 
+/** @todo This list should be built programmatically, and rebuild when files change */
 const ftree = [
     {
         filepath: "_partials/layout.html",
@@ -63,6 +71,8 @@ function watch() {
             log.info("Copied asset", relpath);
         } else if(rootdir === path.basename(dirs.html)) {
             const env = new Engine({ src: dirs.html, out: dirs.out })
+
+            /** @todo configured, not hard-coded */
             env.addGlobal("bookmarks", await readJSON("./bookmarks.json"))
 
             const fnode = ftree.find(o => o.filepath === relpath);
@@ -74,6 +84,8 @@ function watch() {
                     env.renderToFile(p);
                 })
             } else {
+
+                /** @todo partials which aren't imported should still be ignored */
                 // file is a template
                 env.renderToFile(relpath);
             }
