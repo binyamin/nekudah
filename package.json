@@ -1,14 +1,15 @@
 {
   "name": "nekudos",
   "version": "0.1.0",
-  "description": "Tools for building static sites from templates",
+  "private": true,
+  "description": "A set of tools for creating your own static-site workflow.",
   "exports": "./index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "homepage": "https://github.com/binyamin/nekudos#readme",
+  "homepage": "https://github.com/binyamin/nekuda#readme",
   "author": "Binyamin Aron Green (https://binyam.in/)",
   "license": "MIT",
   "dependencies": {
@@ -23,9 +24,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/binyamin/nekudos.git"
+    "url": "git+ssh://git@github.com/binyamin/nekuda.git"
   },
   "bugs": {
-    "url": "https://github.com/binyamin/nekudos/issues"
+    "url": "https://github.com/binyamin/nekuda/issues"
   }
 }
