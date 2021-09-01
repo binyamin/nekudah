@@ -13,7 +13,7 @@
   "author": "Binyamin Aron Green (https://binyam.in/)",
   "license": "MIT",
   "dependencies": {
-    "chokidar": "^3.5.2",
+    "js-yaml": "^4.1.0",
     "nunjucks": "^3.2.3",
     "serve-handler": "^6.1.3",
     "signale-logger": "^1.5.1"
