@@ -6,6 +6,18 @@
 ### The name
 In Hebrew, the word _nekuda_ (נקודה) can be translated as "a point". This project is like the _dot_ in the letter "i", or the _period_ at the end of a sentence. It's just a bag of puzzle pieces.
 
+## Usage
+
+Not on NPM just yet. Install via the GitHub URL.
+```sh
+<npm install | yarn add> https://github.com/binyamin/nekuda
+```
+
+### Provides
+- **Engine (class)** - extends `nunjucks.Environment` ([source](https://github.com/binyamin/nekuda/blob/main/lib/Engine.js))
+  - Adds a "renderToFile" convenience method.
+- **Server (class)** - static file server ([source](https://github.com/binyamin/nekuda/blob/main/lib/Server.js))
+- **Utils.fs** - various filesystem functions ([source](https://github.com/binyamin/nekuda/blob/main/lib/common/fs.js))
 
 ## 💬 Open for comments
 I'd love to hear your thoughts. If you're comfortable, share with me your initial impression [via GitHub discussions](https://github.com/binyamin/nekuda/discussions) or email (see my profile).
