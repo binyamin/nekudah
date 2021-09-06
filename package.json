@@ -5,6 +5,9 @@
   "description": "A set of varied tools for creating your own static-site workflow.",
   "exports": "./index.js",
   "type": "module",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
